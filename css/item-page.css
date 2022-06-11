@@ -1,0 +1,47 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'League Spartan', sans-serif;
+}
+.clicked-item{
+    display: flex;
+    justify-content: space-between;
+}
+.clicked-item img{
+    width: 700px;
+}
+.clicked-item .item-content{
+    margin-top: 60px;
+}
+.clicked-item .item-content p{
+    margin-bottom: 60px;
+}
+.clicked-item .item-content .catogery{
+    font-size: 22px;
+    font-weight: 600;
+}
+.clicked-item .item-content .title{
+    font-size: 38px;
+    font-weight: 600;
+
+}
+.clicked-item .item-content .price{
+    font-size: 36px;
+    font-weight: 600;
+}
+.clicked-item .item-content .desc{
+    font-weight: 600;
+    line-height: 38px;
+    width: 65%;
+    color: #777;
+    margin-top: 60px;
+}
+.clicked-item .item-content button{
+    padding: 10px 13px;
+    background-color: #009688;
+    border: 2px solid #009688;
+    border-radius: 6px;
+    font-weight: 600;
+    color: #fff;
+}

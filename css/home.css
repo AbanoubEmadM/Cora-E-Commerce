@@ -1,0 +1,485 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'League Spartan', sans-serif;
+}
+body{
+    overflow-x: hidden;
+
+}
+/* start home */
+.home .home-img{
+    position: relative;
+}
+.home .home-img .hero{
+    width: 100%;
+}
+.home .home-content{
+    position: absolute;
+    z-index: 2;
+    color: #000;
+    padding-left: 100px;
+    margin-top: 15%;
+}
+.home .home-content .heading{
+    font-size: 34px;
+}
+.home .home-content .title{
+    font-size: 54px;
+}
+.home .home-content .title span{
+    color: #009688;
+    font-size: 65px;
+}
+.home .home-content .save{
+    color: #6B6D7B;
+    font-size: 34px;
+}
+.home .shop{
+    position: relative;
+}
+.home .shop .shop-now{
+    position: absolute;
+    left: 90px;
+    top: 12px;
+}
+.shop .shop-img{
+    width: 300px;
+}
+.shop p{
+    font-size: 25px;
+    font-weight: 600;
+    color: #009688;
+}
+/* end home */
+
+
+/* start products */
+.products{
+    margin-top: 80px;
+}
+.products .heading{
+    text-align: center;
+    font-size: 55px;
+}
+.products .title{
+    text-align: center;
+    font-size: 18px;
+    color: #777;
+    margin-bottom: 30px;
+}
+.products .product{
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+    margin-bottom: 20px;
+    padding: 20px;
+    border-radius: 20px;
+}
+.products .product .title{
+    font-weight: 600;
+
+}
+.products .product img{
+    width: 100%;
+}
+.products .product p{
+    font-size: 23px;
+    font-weight: 600;
+    margin-top: 18px;
+    color: #009688;
+}
+.products .product i{
+    color: orange;
+    margin-right: 5px;
+}
+.products .product .brand{
+    font-size: 16px;
+    font-weight: 600;
+    color: #777;
+}
+.products .product .product-pr-cart{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.products .product .product-pr-cart .cart-item{
+    font-size: 20px;
+    cursor: pointer;
+}
+#view-all{
+    position: absolute;
+    z-index: 100;
+    width: 200px;
+}
+/* end products */
+
+/* start banner */
+.banner{
+    background: url('../img/banner/b2.jpg');
+    padding: 130px;
+    margin-top: 150px;
+}
+.banner .banner-content{
+    text-align: center;
+    color: #fff;
+}
+.banner .banner-content span{
+    color: firebrick;
+}
+.banner .banner-content h1{
+    margin-top: 35px;
+}
+.banner .banner-content button{
+    color: #000;
+    padding: 13px 15px;
+    border: 2px solid #fff;
+    border-radius: 5px;
+    font-size: 18px;
+    margin-top: 35px;
+    font-weight: 600;
+    transition: 0.3s;
+}
+.banner .banner-content button:hover{
+    background-color: transparent;
+    border: 2px solid #fff;
+    transition: 0.3s;
+    color: #fff;
+}
+/* end banner */
+
+/* start new arrival */
+.new-arrival{
+    margin-top: 80px;
+    margin-bottom: 80px;
+}
+.new-arrival .heading{
+    text-align: center;
+    font-size: 55px;
+}
+.new-arrival .title{
+    text-align: center;
+    font-size: 18px;
+    color: #777;
+    margin-bottom: 30px;
+}
+.new-arrival .product{
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+    margin-right: 20px;
+    margin-bottom: 20px;
+    padding: 20px;
+    float: right;
+    width: 23%;
+    border-radius: 20px;
+}
+.new-arrival .product .title{
+    font-weight: 600;
+
+}
+.new-arrival .product img{
+    width: 100%;
+}
+.new-arrival .product p{
+    font-size: 23px;
+    font-weight: 600;
+    margin-top: 18px;
+    color: #009688;
+}
+.new-arrival .product i{
+    color: orange;
+    margin-right: 5px;
+}
+.new-arrival .product .brand{
+    font-size: 16px;
+    font-weight: 600;
+    color: #777;
+}
+.new-arrival .product .product-pr-cart{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.new-arrival .product .product-pr-cart .cart-item{
+    font-size: 20px;
+    cursor: pointer;
+}
+
+/* end new arrival */
+
+/* start sale */
+.sale{
+    margin: 155px;
+}
+.sale .top-sale-cont{
+    display: flex;
+    justify-content: space-evenly;
+    margin-bottom: 20px;
+}
+.sale .sale-container{
+    position: relative;
+    width: 90%;
+    margin-right: 15px;
+}
+.sale .sale-container .sale-content{
+    position: absolute;
+    top: 30%;
+    left: 30px;
+}
+.sale .sale-container .sale-content p.title{
+    font-size: 20px;
+    color: #fff;
+}
+.sale .sale-container .sale-content h1.sale-title{
+    color: #fff;
+    font-weight: 600;
+    font-size: 35px;
+}
+.sale .sale-container .sale-content .desc{
+    color: #fff;
+    font-size: 18px;
+}
+.sale .sale-container .sale-content button{
+    color: #fff;
+    font-size: 18px;
+    font-weight: 600;
+    padding: 13px 18px;
+    border: 2px solid #fff;
+    background-color: transparent;
+    transition: 0.36s;
+}
+.sale .sale-container .sale-content button:hover{
+    background-color: #009688;
+    border: 2px solid #009688;
+    transition: 0.36s;
+}
+.sale .bottom-sales{
+    display: flex;
+    justify-content: space-between;
+}
+.sale .sale-box{
+    width: calc(96%/3);
+    position: relative;
+}
+.sale .sale-box .sale-box-content{
+    position: absolute;
+    top: 25%;
+    left: 6%;
+}
+.sale .sale-box .sale-box-content h1{
+    text-transform: uppercase;
+    color: #fff;
+    font-weight: 600;
+    font-size: 26px;
+}
+.sale .sale-box .sale-box-content h3{
+    color: tomato;
+    text-transform: capitalize;
+}
+.sale img{
+    width: 100%;
+    height: 100%;
+}
+/* end sale */
+
+@media screen and (max-width:600px){
+    .home{
+        margin-top: 100px;
+    }
+    .home .home-img .hero{
+        width: 100%;
+    }
+    .home .home-content{
+        position: absolute;
+        z-index: 2;
+        color: #000;
+        padding-left: 41px;
+        margin-top: 6%;    
+    }
+    .home .home-content .heading{
+        font-size: 13px;
+    }
+    .home .home-content .title{
+        font-size: 18px;
+    }
+    .home .home-content .title span{
+        color: #009688;
+        font-size: 18px;    
+    }
+    .home .home-content .save{
+        color: #6B6D7B;
+        font-size: 9px;    
+    }
+    .home .shop .shop-now{
+        position: absolute;
+        left: 40px;
+        top: 4px;    
+    }
+    .shop p{
+        font-size: 12px;
+        font-weight: 600;
+        color: #009688;    
+    }
+    .shop .shop-img{
+        width: 124px;
+    }
+
+    .products .heading{
+        font-size: 23px;
+    }
+    .products .title{
+        font-size: 12px;
+    }
+    .banner{
+        padding: 48px;
+    }
+    .banner .banner-content h1{
+        margin-top: 35px;
+        font-size: 20px;
+    }
+    .new-arrival .product{
+        width: 100%;
+        float: none;
+    }
+    .sale .left-sale{
+        margin-bottom: 25px;
+    }
+    .sale{
+        margin: 0;
+    }
+    .sale .top-sale-cont{
+        flex-direction: column;
+    }
+    .sale .sale-container{
+        margin: auto;
+        width: 94%;
+    }
+    .sale .sale-container .sale-content{
+        top: 10px;
+    }
+    .sale .sale-container .sale-content p.title{
+        font-size: 15px;
+        margin-bottom: 25px;
+    }
+    .sale .sale-container .sale-content h1.sale-title{
+        font-size: 25px;
+    }
+    .sale .sale-container .sale-content button{
+        padding: 10px 11px;
+    }
+    .sale .sale-container .sale-content .desc{
+        font-size: 15px;
+    }
+    .sale .bottom-sales{
+        flex-direction: column;
+    }
+    .sale .sale-box{
+        width: 94%;
+        margin: auto;
+        margin-bottom: 25px;
+    }
+    .sale .sale-box .sale-box-content h1{
+        font-size: 22px;
+    }
+    .sale .sale-box .sale-box-content h3{
+        font-size: 15px;
+    }
+}
+@media screen and (max-width:1199px){
+    .home{
+        margin-top: 100px;
+    }
+    .home .home-img .hero{
+        width: 100%;
+    }
+    .home .home-content{
+        position: absolute;
+        z-index: 2;
+        color: #000;
+        padding-left: 41px;
+        margin-top: 6%;    
+    }
+    .home .home-content .heading{
+        font-size: 27px;
+    }
+    .home .home-content .title{
+        font-size: 33px;
+    }
+    .home .home-content .title span{
+        color: #009688;
+        font-size: 29px;
+    }
+    .home .home-content .save{
+        color: #6B6D7B;
+        font-size: 17px;
+    }
+    .home .shop .shop-now{
+        position: absolute;
+        left: 40px;
+        top: 4px;    
+    }
+    .shop p{
+        font-size: 20px;
+        font-weight: 600;
+        color: #009688;    
+    }
+    .shop .shop-img{
+        width: 200px;
+    }
+
+    .products .heading{
+        font-size: 34px;
+    }
+    .products .title{
+        font-size: 19px;
+    }
+    .banner{
+        padding: 48px;
+    }
+    .banner .banner-content h1{
+        margin-top: 35px;
+        font-size: 20px;
+    }
+    .sale .left-sale{
+        margin-bottom: 25px;
+    }
+    .sale{
+        margin: 0;
+    }
+    .sale .top-sale-cont{
+        flex-direction: column;
+    }
+    .sale .sale-container{
+        margin: auto;
+        width: 94%;
+    }
+    .sale .sale-container .sale-content{
+        top: 28%;
+    }
+    .sale .sale-container .sale-content p.title{
+        font-size: 22px;
+        margin-bottom: 25px;
+    }
+    .sale .sale-container .sale-content h1.sale-title{
+        font-size: 32px;
+    }
+    .sale .sale-container .sale-content button{
+        padding: 10px 11px;
+    }
+    .sale .sale-container .sale-content .desc{
+        font-size: 20px;
+    }
+    .sale .bottom-sales{
+        flex-direction: column;
+    }
+    .sale .sale-box{
+        width: 94%;
+        margin: auto;
+        margin-bottom: 25px;
+    }
+    .sale .sale-box .sale-box-content h1{
+        font-size: 32px;
+    }
+    .sale .sale-box .sale-box-content h3{
+        font-size: 20px;
+    }
+
+}

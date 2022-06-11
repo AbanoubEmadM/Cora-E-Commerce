@@ -1,0 +1,56 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'League Spartan', sans-serif;
+}
+.cart{
+    /* display: flex; */
+    margin-top: 35px;
+}
+.cart .cart-item img{
+    width: 100%;
+}
+.cart .cart-item{
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+    margin-left: 11px;
+    width: 24%;
+    padding: 20px;
+}
+.cart .cart-item .title{
+    margin-bottom: 15px;
+}
+.cart .cart-item .price{
+    font-size: 20px;
+    margin-top: 20px; 
+    font-weight: 500;
+}
+.cart .cart-item .stars{
+    color: orange;
+}
+.cart .cart-item .buy{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.cart .cart-item .buy .buy-btn{
+    height: 50%;
+    margin-top: 20px;
+    background-color: #009688;
+    border: 2px solid #009688;
+    padding: 11px 18px;
+    border: 6px;
+    color: #fff;
+    font-size: 16px;
+    border-radius: 6px;
+    font-weight: 600;
+    transition: 0.3s;
+}
+@media screen and (max-width:1199px){
+    .cart{
+        flex-direction: column;
+    }
+    .cart .cart-item{
+        width: 100%;
+    }
+}

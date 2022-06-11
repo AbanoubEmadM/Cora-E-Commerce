@@ -1,0 +1,78 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'League Spartan', sans-serif;
+}
+.banner{
+    background: url('../img/about/banner.png');
+    margin-top: 100px;
+    padding: 150px;
+}
+.banner .banner-content{
+    text-align: center;
+    color: #fff;
+}
+.banner .banner-content h1{
+    font-size: 55px;
+}
+.banner .banner-content p{
+    font-size: 22px;
+}
+
+.who-we-are-cont{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 50px;
+}
+.who-we-are .who-we-are-img {
+    width: 50%;
+}
+.who-we-are .who-we-are-img img{
+    width: 100%;
+}
+.who-we-are .who-we-are-content{
+    margin-top: 30px;
+    width: 45%;
+}
+.who-we-are .who-we-are-content h1{
+    font-size: 54px;
+    font-weight: 600;
+}
+.who-we-are .who-we-are-content p{
+    font-size: 17px;
+    color: #777;
+    line-height: 34px;
+}
+.who-we-are video{
+    width: 100%;
+}
+.download-our-app{
+    margin-top: 50px;
+    text-align: center;
+}
+.download-our-app h1{
+    font-size: 50px;
+    font-weight: 600;
+    margin-bottom: 25px;
+}
+@media screen and (max-width:1199px){
+    .banner{
+        padding: 50px;
+    }
+    .banner .banner-content h1{
+        font-size: 30px;
+    }
+    .banner .banner-content p{
+        font-size: 15px;
+    }
+    .who-we-are-cont{
+        flex-direction: column;
+    }
+    .who-we-are .who-we-are-img{
+        width: 100%;
+    }
+    .who-we-are .who-we-are-content{
+        width: 100%;
+    }
+}

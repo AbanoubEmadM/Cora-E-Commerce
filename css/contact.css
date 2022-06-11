@@ -1,0 +1,110 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'League Spartan', sans-serif;
+}
+.banner{
+    background: url('../img/about/banner.png');
+    margin-top: 100px;
+    padding: 150px;
+}
+.banner .banner-content{
+    text-align: center;
+    color: #fff;
+}
+.banner .banner-content h1{
+    font-size: 55px;
+}
+.banner .banner-content p{
+    font-size: 22px;
+}
+
+.contact{
+    display: flex;
+    margin-top: 157px;
+}
+.contact .contact-info span{
+    font-size: 18px;
+    text-transform: uppercase;
+    color: #777;
+}
+.contact .contact-info h1{
+    margin-bottom: 25px;
+}
+.contact .contact-info li{
+    list-style: none;
+    font-size: 17px;
+    margin-bottom: 22px;
+    color: #777;
+}
+.contact .contact-info li i{
+    margin-right: 15px;
+}
+.form-section{
+    display: flex;
+    margin-top: 100px;
+    justify-content: space-between;
+}
+.form-section form{
+    width: 60%;
+}
+.form-section form input{
+    width: 100%;
+    margin-bottom: 15px;
+    border: 1px solid #7777;
+    padding: 12px;
+    border-radius: 3px;
+    outline: none;
+}
+.form-section form input.btn{
+    width: 20%;
+    color: #fff;
+    font-weight: 600;
+    background-color: #009688;
+    border: 2px solid #009688;
+    transition: 0.3s;
+}
+.form-section form input.btn:hover{
+    background-color: #fff;
+    color: #009688;
+    border: 2px solid #009688;
+    transition: 0.3s;
+}
+.form-section form input.message{
+    padding-bottom: 195px;
+}
+.form-section .users{
+    width: 35%;
+}
+.form-section .users .user-box{
+    margin-left: 95px;
+    display: flex;
+}
+.form-section .users .user-box img{
+    margin-right: 20px;
+    margin-top: 24px;
+}
+@media screen and (max-width:1199px){
+    .banner{
+        padding: 50px;
+    }
+    .banner .banner-content h1{
+        font-size: 30px;
+    }
+    .banner .banner-content p{
+        font-size: 15px;
+    }
+    .contact{
+        flex-direction: column;
+    }
+    .form-section{
+        flex-direction: column;
+    }
+    .form-section form{
+        width: 100%;
+    }
+    .form-section .users{
+        width: 100%;
+    }
+}

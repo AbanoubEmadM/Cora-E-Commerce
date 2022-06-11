@@ -1,0 +1,66 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'League Spartan', sans-serif;
+}
+.blog{
+    margin-top: 153px;
+    margin-bottom:80px;
+}
+.blog .blog-item{
+    display: flex;
+    justify-content: space-evenly;
+    margin-bottom: 80px;
+}
+.blog .blog-item .blog-img{
+    width: 420px;
+    height: 250px;
+}
+.blog .blog-item .blog-img img{
+    width: 100%;
+}
+.blog .blog-content{
+    width: 46%;
+}
+.blog .blog-content p{
+    font-size: 18px;
+    color: #777;
+    line-height: 35px;
+}
+.blog .blog-content h2{
+    font-weight: 600;
+}
+.blog .blog-content span{
+    font-size: 17px;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+.banner{
+    background: url('../img/banner/b19.jpg');
+    position: relative;
+    top: 100px;
+    padding: 132px;
+    text-align: center;
+    background-position: top;
+}
+.banner .banner-content{
+    color: #fff;
+}
+.banner .banner-content h1{
+    font-size: 45px;
+}
+.banner .banner-content p{
+    font-size: 20px;
+}
+@media screen and (max-width:1199px){
+    .blog .blog-item{
+        flex-direction: column;
+    }
+    .blog .blog-item .blog-img{
+        width: 100%;
+    }
+    .blog .blog-content{
+        width: 100%;
+    }
+}

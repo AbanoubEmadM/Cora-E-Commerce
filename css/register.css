@@ -1,0 +1,54 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'League Spartan', sans-serif;
+}
+
+.login .row h4{
+    margin-left: 15px;
+}
+.login .title{
+    margin-bottom: 50px;
+    text-align: center;
+}
+.login input{
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    outline: none;
+    transition: 0.3s;
+}
+.login input[type=checkbox]{
+    width: auto;
+    margin-right: 10px;
+}
+.login input:focus{
+    border: 1px solid #00bcd4;
+    transition: 0.3s;
+}
+.login .inp{
+    margin-bottom: 20px;
+    font-size: 17px;
+}
+.login .agree{
+    text-align: center;
+    margin-top: 50px;
+}
+.login .agree button{
+    padding: 11px 53px;
+    border-radius: 36px;
+    font-size: 16px;
+    border: 2px solid #00bcd4;
+    background-color: #00bcd4;
+    color: #fff;
+    transition: 0.3s;
+    font-weight: 500;
+    margin-right: 20px;
+}
+.login .agree button:hover{
+    background-color: #fff;
+    color: #000;
+    transition: 0.3s;
+}

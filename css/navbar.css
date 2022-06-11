@@ -1,0 +1,107 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'League Spartan', sans-serif;
+}
+
+/* start navbar */
+nav{
+    box-shadow: rgb(0 0 0 / 15%) 1.95px 1.95px 2.6px;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    background: #E4E6F4;
+    z-index: 100;
+}
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 30px;
+    align-items: center;
+}
+.navbar .logo{
+    width: 65%;
+}
+.navbar .nav-item.active{
+    display: block;
+}
+.navbar .nav-items ul{
+    list-style: none;
+}
+.navbar .nav-items ul li{
+    display: inline-block;
+    margin-left: 20px;
+    font-size: 19px;
+    border-bottom: 2px solid #E4E6F4;
+    transition: 0.3s;
+    font-weight: 600;
+    cursor: pointer;
+}
+.navbar .nav-items ul li.active{
+    border-bottom: 2px solid #009688;
+}
+.navbar .logo i{
+    display: none;
+}
+.navbar .nav-items ul li a{
+    color: #6B6D7B;
+    text-decoration: none;
+    padding-bottom: 8px;
+}
+.navbar .nav-items #cart{
+    position: relative;
+    cursor: pointer;
+}
+.navbar .nav-items #cart .badge-icon{
+    background-color: red;
+    border-radius: 50%;
+    width: 20px;
+    height: 19px;
+    text-align: center;
+    font-size: 14px;
+    display: none;
+    color: #fff;
+    display: none;
+}
+
+.nav-items #items-number{
+position: absolute;
+top: -15px;
+left: -5px;
+} 
+/* end navbar */
+@media screen and (max-width:1199px){
+    .navbar{
+        flex-direction: column;
+    }
+    .navbar .logo i{
+        display: block;
+    }
+    
+    .nav-items{
+        display: none;
+        text-align: center;
+        margin-top: 50px;
+    }
+    .navbar .nav-items ul{
+        display: flex;
+        flex-direction: column;
+    }
+    .navbar .nav-items ul li{
+        margin-bottom: 20px;
+        font-size: 30px;
+    }
+    .navbar .logo{
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .navbar .logo i{
+        font-size: 25px;
+    }
+    .navbar .nav-items{
+        height: 100vh;
+    }
+}
