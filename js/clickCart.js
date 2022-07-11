@@ -2,5 +2,5 @@ let cartIconNav = document.getElementById("cart");
 let viewAll = document.getElementById("view-all");
 
 cartIconNav.onclick = function(e){
-    window.location = '../html/cart.html'   
+    window.location = 'cart.html'   
 }

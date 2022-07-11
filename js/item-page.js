@@ -18,5 +18,5 @@ itemPage.innerHTML = `
 `
 function addToCart(){
     localStorage.setItem("added_title",itemPage.innerHTML);
-    window.location = '../html/payment.html'
+    window.location = 'payment.html'
 }

@@ -1,30 +1,30 @@
 let blogItems = [
     {
-        img:'../img/blog/b1.jpg',
+        img:'img/blog/b1.jpg',
         title:"The Cotton-jersey Zip-Up Hoodie",
         desc:"Kickstarter man braid godard coloring book.Raclette waistcoot Selfies wolf charteuse hexagon irony",
         readMore:"continue reading"
     },
     {
-        img:'../img/blog/b2.jpg',
+        img:'img/blog/b2.jpg',
         title:"The Cotton-jersey Zip-Up Hoodie",
         desc:"Kickstarter man braid godard coloring book.Raclette waistcoot Selfies wolf charteuse hexagon irony",
         readMore:"continue reading"
     },
     {
-        img:'../img/blog/b3.jpg',
+        img:'img/blog/b3.jpg',
         title:"The Cotton-jersey Zip-Up Hoodie",
         desc:"Kickstarter man braid godard coloring book.Raclette waistcoot Selfies wolf charteuse hexagon irony",
         readMore:"continue reading"
     },
     {
-        img:'../img/blog/b4.jpg',
+        img:'img/blog/b4.jpg',
         title:"The Cotton-jersey Zip-Up Hoodie",
         desc:"Kickstarter man braid godard coloring book.Raclette waistcoot Selfies wolf charteuse hexagon irony",
         readMore:"continue reading"
     },
     {
-        img:'../img/blog/b6.jpg',
+        img:'img/blog/b6.jpg',
         title:"The Cotton-jersey Zip-Up Hoodie",
         desc:"Kickstarter man braid godard coloring book.Raclette waistcoot Selfies wolf charteuse hexagon irony",
         readMore:"continue reading"

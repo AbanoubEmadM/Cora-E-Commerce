@@ -6,7 +6,7 @@ let cart = document.getElementById("cart-item");
 
 // buyBtn.forEach((btn)=>{
 //        btn.addEventListener("click",()=>{
-//          window.location = '../html/payment.html'
+//          window.location = 'payment.html'
 //        })
 // })
 

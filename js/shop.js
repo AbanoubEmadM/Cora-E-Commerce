@@ -1,7 +1,7 @@
 let allProducts = [
     {
         id:1,
-        img:"../img/products/f1.jpg",
+        img:"img/products/f1.jpg",
         brand:"adidas",
         title:"Willit Men's UPF 50+ Sun Protection Hoodie Shirt Long Sleeve",
         stars:`<i class="fa-solid fa-star"></i>`,
@@ -10,7 +10,7 @@ let allProducts = [
     },
     {
         id:2,
-        img:"../img/products/f2.jpg",
+        img:"img/products/f2.jpg",
         brand:"adidas",
         title:"Amazon Essentials Men's Sherpa Lined Full-Zip Hooded Fleece Sweatshirt",
         stars:`<i class="fa-solid fa-star"></i>`,
@@ -20,7 +20,7 @@ let allProducts = [
     },
     {
         id:3,
-        img:"../img/products/f3.jpg",
+        img:"img/products/f3.jpg",
         brand:"adidas",
         title:"Amazon Essentials Men's Standard Full-Zip Hooded Fleece Sweatshirt",
         stars:`<i class="fa-solid fa-star"></i>`,
@@ -30,7 +30,7 @@ let allProducts = [
     },
     {
         id:4,
-        img:"../img/products/f4.jpg",
+        img:"img/products/f4.jpg",
         brand:"adidas",
         title:"Cartoon Astronaut T-shirt",
         stars:`<i class="fa-solid fa-star"></i>`,
@@ -40,7 +40,7 @@ let allProducts = [
     },
     {
         id:5,
-        img:"../img/products/f5.jpg",
+        img:"img/products/f5.jpg",
         brand:"adidas",
         title:"Cartoon Astronaut T-shirt",
         stars:`<i class="fa-solid fa-star"></i>`,
@@ -50,7 +50,7 @@ let allProducts = [
     },
     {
         id:6,
-        img:"../img/products/f6.jpg",
+        img:"img/products/f6.jpg",
         brand:"adidas",
         title:"Cartoon Astronaut T-shirt",
         stars:`<i class="fa-solid fa-star"></i>`,
@@ -60,7 +60,7 @@ let allProducts = [
     },
     {
         id:7,
-        img:"../img/products/f7.jpg",
+        img:"img/products/f7.jpg",
         brand:"adidas",
         title:"Cartoon Astronaut T-shirt",
         stars:`<i class="fa-solid fa-star"></i>`,
@@ -70,7 +70,7 @@ let allProducts = [
     },
     {
         id:8,
-        img:"../img/products/f8.jpg",
+        img:"img/products/f8.jpg",
         brand:"adidas",
         title:"Cartoon Astronaut T-shirt",
         stars:`<i class="fa-solid fa-star"></i>`,
@@ -80,7 +80,7 @@ let allProducts = [
     },
     {
         id:9,
-        img:"../img/products/n1.jpg",
+        img:"img/products/n1.jpg",
         brand:"adidas",
         title:"Cartoon Astronaut T-shirt",
         stars:`<i class="fa-solid fa-star"></i>`,
@@ -89,7 +89,7 @@ let allProducts = [
     },
     {
         id:10,
-        img:"../img/products/n2.jpg",
+        img:"img/products/n2.jpg",
         brand:"adidas",
         title:"Cartoon Astronaut T-shirt",
         stars:`<i class="fa-solid fa-star"></i>`,
@@ -98,7 +98,7 @@ let allProducts = [
     },
     {
         id:11,
-        img:"../img/products/n3.jpg",
+        img:"img/products/n3.jpg",
         brand:"adidas",
         title:"Cartoon Astronaut T-shirt",
         stars:`<i class="fa-solid fa-star"></i>`,
@@ -107,7 +107,7 @@ let allProducts = [
     },
     {
         id:12,
-        img:"../img/products/n4.jpg",
+        img:"img/products/n4.jpg",
         brand:"adidas",
         title:"Cartoon Astronaut T-shirt",
         stars:`<i class="fa-solid fa-star"></i>`,
@@ -116,7 +116,7 @@ let allProducts = [
     },
     {
         id:13,
-        img:"../img/products/n5.jpg",
+        img:"img/products/n5.jpg",
         brand:"adidas",
         title:"Cartoon Astronaut T-shirt",
         stars:`<i class="fa-solid fa-star"></i>`,
@@ -126,7 +126,7 @@ let allProducts = [
     },
     {
         id:14,
-        img:"../img/products/n6.jpg",
+        img:"img/products/n6.jpg",
         brand:"adidas",
         title:"Cartoon Astronaut T-shirt",
         stars:`<i class="fa-solid fa-star"></i>`,
@@ -135,7 +135,7 @@ let allProducts = [
     },
     {
         id:15,
-        img:"../img/products/n7.jpg",
+        img:"img/products/n7.jpg",
         brand:"adidas",
         title:"Cartoon Astronaut T-shirt",
         stars:`<i class="fa-solid fa-star"></i>`,
@@ -144,7 +144,7 @@ let allProducts = [
     },
     {
         id:16,
-        img:"../img/products/n8.jpg",
+        img:"img/products/n8.jpg",
         brand:"adidas",
         title:"Cartoon Astronaut T-shirt",
         stars:`<i class="fa-solid fa-star"></i>`,
@@ -185,7 +185,7 @@ function checkLoged(){
         swal("Sorry", "You Have To Register", "error");
         localStorage.removeItem("added_title");
         setTimeout(()=>{
-            window.location = '../html/register.html'
+            window.location = 'register.html'
         },1000)
     }
 }
@@ -219,7 +219,7 @@ function showItem(id){
     localStorage.setItem("title",clickedItemNew.title)
     localStorage.setItem("price",clickedItemNew.price)
     localStorage.setItem("brand",clickedItemNew.brand)
-    window.location = '../html/item-page.html';
+    window.location = 'item-page.html';
 }
 
 let allTitles = Array.from(document.querySelectorAll(".title"));

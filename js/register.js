@@ -22,11 +22,11 @@ agreeBtn.onclick  = function(e){
         alert("'Password' doesnt match 'Confirm Password'")
     }
     else{
-        window.location = '../html/home.html';
+        window.location = 'home.html';
         localStorage.setItem("user_name",`${fName.value} ${lName.value}`)
     }
 }
 
 loginBtn.onclick = function(){
-    window.location = '../html/login.html'
+    window.location = 'login.html'
 }
