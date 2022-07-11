@@ -4,7 +4,7 @@ let submitBtn = document.getElementById("submit-btn");
 
 submitBtn.onclick = function(){
     if(email.value !== "" && password.value !== ""){
-        window.location = 'home.html'
+        window.location = 'index.html'
     }else{
         swal("Sorry", "You Have To Write All Info", "error");
     }
