@@ -114,13 +114,12 @@ function addedToCart(id){
         <span class="stars">${clickedItem.stars.repeat(5)}</span>  
             <div class="buy">
                 <p class="price">${clickedItem.price} </p>
-                <button id="buy-btn" class="buy-btn">Buy Now!</button>
+                <button id="buy-btn" class="buy-btn" onclick="window.location = 'payment.html'">Buy Now!</button>
             </div>
        </div>
     `;
     localStorage.setItem("added_title",hiddenItem.innerHTML);
 }
-
 let badge = document.getElementById("items-number")
 let num = 1;
 function checkLoged(){
@@ -216,7 +215,7 @@ function addNewArrivalToCart(id){
         <span class="stars">${clickedItem.stars.repeat(5)}</span>  
             <div class="buy">
                 <p class="price">${clickedItem.price} </p>
-                <button id="buy-btn" class="buy-btn">Buy Now!</button>
+                <button id="buy-btn" class="buy-btn" onclick="window.location = 'payment.html'">Buy Now!</button>
             </div>
        </div>
     `;
