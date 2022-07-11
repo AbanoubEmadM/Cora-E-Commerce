@@ -3,7 +3,7 @@ let allProducts = [
         id:1,
         img:"../img/products/f1.jpg",
         brand:"adidas",
-        title:"Cartoon Astronaut T-shirt",
+        title:"Willit Men's UPF 50+ Sun Protection Hoodie Shirt Long Sleeve",
         stars:`<i class="fa-solid fa-star"></i>`,
         price:"$78",
         cartIcon:`<i class="fa-solid fa-cart-shopping"></i>`
@@ -12,7 +12,7 @@ let allProducts = [
         id:2,
         img:"../img/products/f2.jpg",
         brand:"adidas",
-        title:"Cartoon Astronaut T-shirt",
+        title:"Amazon Essentials Men's Sherpa Lined Full-Zip Hooded Fleece Sweatshirt",
         stars:`<i class="fa-solid fa-star"></i>`,
         price:"$78",
         cartIcon:`<i class="fa-solid fa-cart-shopping"></i>`
@@ -22,7 +22,7 @@ let allProducts = [
         id:3,
         img:"../img/products/f3.jpg",
         brand:"adidas",
-        title:"Cartoon Astronaut T-shirt",
+        title:"Amazon Essentials Men's Standard Full-Zip Hooded Fleece Sweatshirt",
         stars:`<i class="fa-solid fa-star"></i>`,
         price:"$78",
         cartIcon:`<i class="fa-solid fa-cart-shopping"></i>`
@@ -153,23 +153,24 @@ let allProducts = [
     }
 ];
 let allProductsDiv = document.getElementById("all-products");
-
-allProducts.forEach((product)=>{
-    let productDiv =  `
-    <div class="product-div col-lg-3 col-md-4 col-sm-12">
-        <img src=${product.img}>
-        <p>${product.brand}</p>
-        <p onclick="showItem(${product.id})" class="title">${product.title}</p>
-        <div class="buy">
-        <p>${product.stars.repeat(5)}</p>
-        <p onclick="addedToCart(${product.id})">${product.cartIcon}</p>
+function drawProducts(){
+    allProducts.forEach((product)=>{
+        let productDiv =  `
+        <div class="product-div col-md-4 col-sm-12">
+            <img src=${product.img}>
+            <p>${product.brand}</p>
+            <p id="title" onclick="showItem(${product.id})" class="title">${product.title}</p>
+            <div class="buy">
+            <p>${product.stars.repeat(5)}</p>
+            <p onclick="addedToCart(${product.id})">${product.cartIcon}</p>
+            </div>
+            <p class="price">${product.price}</p>
         </div>
-        <p class="price">${product.price}</p>
-    </div>
-    `
-    allProductsDiv.innerHTML += productDiv
-})
-
+        `
+        allProductsDiv.innerHTML += productDiv
+    })    
+}
+drawProducts()
 let badge = document.getElementById("items-number")
 let num = 1;
 
@@ -219,4 +220,30 @@ function showItem(id){
     localStorage.setItem("price",clickedItemNew.price)
     localStorage.setItem("brand",clickedItemNew.brand)
     window.location = '../html/item-page.html';
+}
+
+let allTitles = Array.from(document.querySelectorAll(".title"));
+
+let input = document.querySelector("#search");
+let search = document.querySelector("#button");
+let allItems = Array.from(document.querySelectorAll(".product-div"));
+
+function filterItems(){
+    if(input.value != ''){
+        let val = input.value;
+        allTitles.forEach(title => {
+            for(let i = 0; i < title.textContent; i++){
+                let filteredItem = allTitles.filter(title => title.textContent[i] === val);
+                allProductsDiv.innerHTML = ''
+                filteredItem.forEach(ele => {
+                    allProductsDiv.innerHTML += `
+                    <div class="product-div col-md-4 col-sm-12">${ele.parentElement.innerHTML}</div>
+                    `;
+
+                })
+            }
+        })
+    }else{
+        drawProducts()
+    }
 }
