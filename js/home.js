@@ -86,7 +86,7 @@ let productsDiv = document.getElementById("products")
 
 productsData.forEach(product => {
     let productItem = `
-        <div class="product col-lg-3 col-md-6 col-sm-12">
+       <div class="cart-item col-lg-4 col-md-6 col-sm-12">
             <img src=${product.img}>
             <span class="brand">${product.brand} </span>
             <h4 onclick="addedToCart(${product.id})" class="title">${product.title}</h4>
@@ -107,7 +107,7 @@ function addedToCart(id){
     checkLoged();
     let clickedItem  = productsData.find((product) =>product.id === id);
     hiddenItem.innerHTML += `
-       <div class="cart-item col-lg-3 col-md-4 col-sm-12">
+       <div class="cart-item col-lg-4 col-md-6 col-sm-12">
         <img src=${clickedItem.img}>
         <span class="brand">${clickedItem.brand} </span><br>
         <h4 class="title">${clickedItem.title}</h4>
